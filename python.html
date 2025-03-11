@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonction vs Procédure en Algorithme et Python</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+        }
+        pre {
+            background-color: #2e2e2e;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            color: #00ff00;
+        }
+        h1, h2, h3 {
+            color: #ffcc00;
+        }
+        strong {
+            color: #ff5733;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Différence entre Fonction et Procédure</h1>
+        <h2>1. Définition</h2>
+        <p><strong>Procédure :</strong> Une procédure est un bloc d'instructions qui exécute une tâche spécifique sans retourner de valeur. Elle est utile pour regrouper du code répétitif et améliorer l'organisation.</p>
+        <p><strong>Fonction :</strong> Une fonction est similaire à une procédure, mais elle retourne une valeur après son exécution. Elle est utilisée pour traiter des données et renvoyer un résultat.</p>
+        
+        <h2>2. Différences Clés</h2>
+        <ul>
+            <li><strong>Retour de valeur :</strong> Une fonction retourne toujours une valeur, alors qu'une procédure ne retourne rien.</li>
+            <li><strong>Utilisation :</strong> Une procédure est souvent utilisée pour afficher des résultats ou modifier des données, tandis qu'une fonction est principalement utilisée pour effectuer des calculs et fournir un résultat.</li>
+            <li><strong>Réutilisabilité :</strong> Les deux permettent de réutiliser du code, mais une fonction peut être directement intégrée dans des expressions mathématiques ou conditionnelles.</li>
+        </ul>
+        
+        <h2>3. Syntaxe</h2>
+        <h3>En Algorithme</h3>
+        <pre>
+// Déclaration d'une procédure
+Procédure NomDeLaProcédure(paramètres)
+    // Instructions
+FinProcédure
+
+// Déclaration d'une fonction
+Fonction NomDeLaFonction(paramètres) : TypeRetour
+    // Instructions
+    Retourner valeur
+FinFonction
+        </pre>
+
+        <h3>En Python</h3>
+        <pre>
+# Déclaration d'une procédure (fonction sans retour)
+def nom_de_la_procédure(paramètres):
+    # Instructions
+    pass
+
+# Déclaration d'une fonction
+def nom_de_la_fonction(paramètres):
+    # Instructions
+    return valeur
+        </pre>
+
+        <h2>4. Exemple en Algorithme</h2>
+        <h3>Procédure</h3>
+        <pre>
+Procédure AfficherMessage()
+    Écrire("Bonjour, ceci est une procédure !")
+FinProcédure
+
+AfficherMessage()
+        </pre>
+
+        <h3>Fonction</h3>
+        <pre>
+Fonction Additionner(a, b) : Entier
+    Retourner a + b
+FinFonction
+
+Écrire(Additionner(5, 3)) // Affiche 8
+        </pre>
+
+        <h2>5. Exemple en Python</h2>
+        <h3>Procédure</h3>
+        <pre>
+def afficher_message():
+    print("Bonjour, ceci est une procédure !")
+
+afficher_message()
+        </pre>
+
+        <h3>Fonction</h3>
+        <pre>
+def additionner(a, b):
+    return a + b
+
+print(additionner(5, 3))  # Affiche 8
+        </pre>
+        
+        <h2>6. Cas d'Utilisation</h2>
+        <h3>Quand utiliser une procédure ?</h3>
+        <ul>
+            <li>Lorsque vous devez exécuter une action sans besoin de retour (ex : affichage d'un message).</li>
+            <li>Pour organiser du code en tâches distinctes sans interaction directe avec d'autres parties du programme.</li>
+        </ul>
+        
+        <h3>Quand utiliser une fonction ?</h3>
+        <ul>
+            <li>Lorsque vous avez besoin d'un résultat calculé à utiliser ailleurs dans le programme.</li>
+            <li>Pour éviter la redondance et améliorer la modularité du code.</li>
+        </ul>
+    </div>
+</body>
+</html>
